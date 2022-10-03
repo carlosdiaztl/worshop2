@@ -60,6 +60,23 @@
   min-width: 300px;
   width: 100%;
 }
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div__left {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav__item {
   text-decoration: none;
 }
