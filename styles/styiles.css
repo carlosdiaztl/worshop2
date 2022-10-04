@@ -60,5 +60,201 @@
   min-width: 300px;
   width: 100%;
 }
+.main__divD__img2 {
+  display: none;
+}
+
+.header {
+  max-height: 100px;
+  min-height: 50px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div__left {
+  display: flex;
+  padding: 10px;
+}
+
+.nab__container {
+  display: none;
+}
+
+.nav__item {
+  text-decoration: none;
+  background-color: white;
+  border: none;
+}
+.nav__item:hover {
+  cursor: pointer;
+}
+
+.select_company {
+  text-decoration: none;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  width: 100px;
+  height: 20px;
+}
+.select_company:hover {
+  cursor: pointer;
+}
+
+.nav__item {
+  color: black;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.figure__logo {
+  width: 140px;
+}
+
+.div__right__button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  border-color: rgb(224, 202, 202);
+}
+.div__right__button:hover {
+  cursor: pointer;
+  border-color: black;
+}
+
+.sections {
+  width: 80px;
+}
+.sections button {
+  text-decoration: none;
+  background-color: white;
+  border: none;
+}
+.sections button:hover {
+  cursor: pointer;
+  text-decoration: solid;
+}
+
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+  }
+  .header__nav {
+    display: none;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+  }
+  .main {
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main__divD {
+    padding: 0;
+    margin: 0;
+  }
+  .main__divD__img2 {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .main__divD__img {
+    display: none;
+  }
+  .main__divI {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .main__divI__section {
+    margin: 0;
+  }
+  .main__divI__section img {
+    margin-left: 5%;
+  }
+  .main__divI__text {
+    margin-top: 1%;
+    width: 100%;
+  }
+  .main__divI__text h1 {
+    text-align: center;
+    font-size: 250%;
+  }
+  .main__divI__text h3 {
+    width: 50%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 25%;
+  }
+  .main__divI__text button {
+    padding: 0;
+    margin: 0;
+    margin-left: 40%;
+  }
+  .main__divI__text br {
+    display: none;
+  }
+  .nab__container {
+    display: block;
+  }
+  .nab__div {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 50%;
+    margin-top: 5%;
+  }
+  .nab__div button {
+    text-align: center;
+    width: 40%;
+    background-color: white;
+    border-color: white;
+  }
+  .nab__div button:hover {
+    cursor: pointer;
+  }
+  .buts {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+  .buts:hover {
+    cursor: pointer;
+    border-color: black;
+    border: 30px;
+  }
+  .hidden {
+    display: none;
+  }
+  .select_compan {
+    background-color: white;
+    border: none;
+  }
+  .nab__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=styiles.css.map */
