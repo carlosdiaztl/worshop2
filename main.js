@@ -1,18 +1,18 @@
-class x{
+class menusx{
     constructor(id){
     this.target =document.getElementById(id)
 }
 }
-const {target:menuH} =new x('menuhamburguesa')
-const {target:menuI} =new x('menuinterno')
-const {target:menuH1} =new x('menuhamburguesa1')
-const {target:menuI1} =new x('menuinterno1')
-const {target:Company} =new x('Company')
-const {target:Companys} =new x('Companys')
-const {target:Company1} =new x('Company1')
-const {target:Companys1} =new x('Companys1')
-const {target:menu} =new x('menu')
-const {target:bigmenu} =new x('bigmenu')
+const {target:menuH} =new menusx('menuhamburguesa')
+const {target:menuI} =new menusx('menuinterno')
+const {target:menuH1} =new menusx('menuhamburguesa1')
+const {target:menuI1} =new menusx('menuinterno1')
+const {target:Company} =new menusx('Company')
+const {target:Companys} =new menusx('Companys')
+const {target:Company1} =new menusx('Company1')
+const {target:Companys1} =new menusx('Companys1')
+const {target:menu} =new menusx('menu')
+const {target:bigmenu} =new menusx('bigmenu')
 
 const ocularYmostrar =()=>{
     
