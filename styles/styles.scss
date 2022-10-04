@@ -70,12 +70,17 @@ $font-size-h1:20px;
             min-width: 300px;
             width: 100%;
         }
+        &__img2{
+            display: none;
+        }
 
     }
 
 }
 
 .header{
+    max-height: 100px;
+    min-height: 50px;
     &__nav{
     display: flex;
     justify-content: space-between;
@@ -84,20 +89,192 @@ $font-size-h1:20px;
 }
 .div__left{
     display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    
+    padding: 10px; 
+}
+.nab__container{
+    display: none;
 }
 
-.header__list{
-    display: flex;
-    justify-content: space-between;
-}
 
 .nav__item{
     text-decoration: none;
+    background-color: white;
+    border: none;
+    &:hover{
+        cursor: pointer;
+    }
 }
-
+.select_company{
+    text-decoration: none;
+    background-color:white;
+    border: none;
+    text-decoration: none;
+    width: 100px;
+    height: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.nav__item{
+    color: black;
+}
 .hidden{
     visibility: hidden;
+}
+.figure__logo{
+    width: 140px;
+}
+.div__right{
+    &__button{
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: white;
+        border-color: rgb(224, 202, 202);
+    }
+    &__button:hover{
+        cursor: pointer;
+        border-color: black;
+    }
+    
+}
+.sections{
+    width: 80px;
+    & button{
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    }
+    & button:hover{
+        cursor: pointer;
+        text-decoration: solid;
+
+    }
+}
+@media (max-width: 768px){
+    
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+
+   }
+    .header{
+        &__nav{
+            display: none;
+        }
+    }
+    
+    body{
+        width:100%;
+        height: 100%;
+        background-color: aqua;
+    }
+    .main{
+        height: 100%;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        &__divD{
+            padding: 0;
+            margin: 0;
+        }
+        &__divD__img2{
+            display:block;
+            height: 100%;
+            width: 100%;
+        }
+        &__divD__img{
+            display:none;
+        }
+        &__divI{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            &__section{
+                margin: 0;
+                & img{
+                    margin-left: 5%;
+                }
+            }
+            
+            &__text{
+                margin-top: 1%;
+                width: 100%;
+                & h1{
+                    text-align: center;
+                    font-size: 250%;
+                }
+                & h3{
+                    width: 50%;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-left: 25%;
+                }
+                & button{
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 40%;
+                    
+                    
+                }
+                br{
+                    display: none;
+                }
+            }
+        }
+
+    }
+    .nab__container{
+        display: block;
+    }
+    .nab__div{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    .nab__div button{ 
+        text-align: center;
+        width:40% ;
+        background-color: white;
+        border-color: white;
+    }
+    .nab__div button:hover{
+        cursor: pointer;
+    }
+   
+    .buts{
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+    .buts:hover {
+        cursor: pointer;
+        border-color: black;
+        border: 30px;
+    }
+    .hidden{
+        display: none;
+    }
+ .select_compan{
+    background-color: white;
+    border: none;
+}
+.nab__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 }

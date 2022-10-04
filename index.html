@@ -9,18 +9,22 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <div class="div__left">
-                <figure class="figure__logo">
-                    <img src="./images/logo.svg" alt="logo">
-                </figure>
+
+            <div class="nab__container" >
+                <figure> <img src="/images/logo.svg" alt=""></figure>
+                <button id="menu"> <img src="/images/icon-menu.svg" alt=""></button>
                 
-                <li class="nav__menu">
-                    <a href="" class="nav__item">Features</a>
-                    <ul class="hidden">
+            
+                <div class="nab__div" id="bigmenu"> 
+                <section class="nav__menu">
+
+                
+                
+                    <button class="nav__item" id="menuhamburguesa1">Features</button>
+                    <ul class="hidden" id="menuinterno1">
                         <li>
                             <img src="./images/icon-todo.svg" alt="">
-                            <a href="" class="nav__item">Todo list</a>
+                            <a  href="" class="nav__item">Todo list</a>
                         </li>
                         <li>
                             <img src="./images/icon-calendar.svg" alt="">
@@ -35,30 +39,85 @@
                             <a href="" class="nav__item">Planning</a>
                         </li>
                     </ul>
-                </li>
-
-
-                <select name="" id="Company">Company
-                    <option value="">Company</option>
-                    <option value="">History</option>
-                    <option value="">Our Team</option>
-                    <option value="">Blog</option>
-                </select>
-                <section >
-                    <a href="Careers" class="nav__item">Careers</a>
                 </section>
-                 <section>
-                     <a href="About" class="nav__item">About</a>
-                 </section>
+                <button class="select_compan"  id="Company1"> Company 
+                    <div id="Companys1" class="hidden">
+
+                        <option value="">History</option>
+                        <option value="">Our Team</option>
+                        <option value="">Blog</option> 
+                    </div>
+                </button> 
+                <button class="butts">Careers </button>
+                <button class="butts">About </button>
+                <button class="buts">Login</button>
+                    <button class="buts">Register</button> 
+                
+               
+
+                </div>
+                
+            </div>
+        
+            <nav class="header__nav">
+                
+            <div class="div__left">
+                <figure class="figure__logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </figure >
+                <section class="nav__menu">
+
+                
+                
+                    <button class="nav__item" id="menuhamburguesa">Features</button>
+                    <ul class="hidden" id="menuinterno">
+                        <li>
+                            <img src="./images/icon-todo.svg" alt="">
+                            <a  href="" class="nav__item">Todo list</a>
+                        </li>
+                        <li>
+                            <img src="./images/icon-calendar.svg" alt="">
+                            <a href="" class="nav__item">Calendar</a>
+                        </li>
+                        <li>
+                            <img src="./images/icon-reminders.svg" alt="">
+                            <a href="" class="nav__item">Reminders</a>
+                        </li>
+                        <li>
+                            <img src="./images/icon-planning.svg" alt="">
+                            <a href="" class="nav__item">Planning</a>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <button class="select_company"  id="Company"> Company 
+                    <div id="Companys" class="hidden">
+
+                        <option value="">History</option>
+                        <option value="">Our Team</option>
+                        <option value="">Blog</option> 
+                    </div>
+                </button> 
+                
+                
+                
+                <section class="sections"> <button>Careers </button>
+                    
+                </section>
+                <section class="sections">  <button>About </button> 
+                   
+                </section>
+            </div>
                    
                     
 
                 
             </div>
 
-            <div class="div__nav__right">
-                <button class="button__login">login</button>
-                <button class="button__register">register</button>
+            <div class="div__right">
+                <button class="div__right__button" >login</button>
+                <button class="div__right__button">register</button>
 
             </div>
         </nav>
@@ -95,10 +154,11 @@
         </div>
             <div class="main__divD">
             <img class="main__divD__img" src="/images/image-hero-desktop.png" alt="">
+            <img class="main__divD__img2" src="/images/image-hero-mobile.png" alt="">
 
         </div>
 
     </main>
-    
+    <script src="/main.js"></script>
 </body>
 </html>
